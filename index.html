@@ -17,7 +17,45 @@
   <link rel="stylesheet" href="./theme/css/style.css">
   <link rel="stylesheet" href="./theme/css/custom.css">
 
+  <style>
+    body {
+        background-color: #fafafa;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+    }
+    header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #fff;
+        color: #222;
+        border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+        font-weight: 600;
+        margin: 0;
+        font-size: 24px;
+    }
+    header p {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #666;
+    }
+    .content p, .content ul {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
 
+    .list-inline-item a:hover {
+        text-decoration: underline;
+    }
+    .highlight-box {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+</style>
 <meta name="description" content="ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences">
 </head>
 
@@ -55,110 +93,46 @@
   <div class="content">
     <div class="container">
 
-<div class="row">
-<!-- <div class="col-md-7"> -->
-    <p>
-   In-person workshop at <a href="https://nips.cc/Conferences/2024/Dates">ICML 2025</a>
-    </p>
-    <p>
-      <b>Date:</b> Saturday, July 18, 2025
-    </p>
-    <p>
-      <b>Time</b>: 8:30 AM -- 5:40 PM
-    </p>
-    <p>
-      <b>Location:</b> Vancouver Convention Center, Canada
-    </p>
-    <!--<p>
-      <b>Schedule</b>:
-      <a href="./pages/schedule.html">here</a>
-    </p>-->
-    <p>
-      <b>Speakers</b>:
-      <a href="./pages/speakers.html">here</a>
-    </p>
-    <p>
-      <b>NeurIPS link</b>: 
-      <a href="https://neurips.cc/virtual/2024/workshop/84703">here</a>
-    </p>
-    <p>
-      <b>Paper Submission</b>:
-      <a href="https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/SSL">OpenReview</a>
-    </p>
-    <p>
-      <b>Contact Email</b>: fm4ls2025@gmail.com
-    </p>
-  
-  <!--p><b>For poster sessions: </b>posters can be viewed in the <a href='./pages/Accepted Paper.html'>Accepted Papers</a> page. If interested in a poster, you can click on the corresponding Zoom link. The authors will be presenting their posters in their Zoom.</p-->
-
-  <p>
-    Foundation models and large language models (LLMs) represent a transformative advancement in life sciences,
-    offering a new paradigm for understanding complex biological systems. These large-scale
-    models are pretrained on extensive datasets encompassing various biological data types, enabling them to perform
-    a wide range of tasks such as predicting protein structures, analyzing genomic sequences, and simulating cellular
-    processes. Despite these advances, most existing foundation models and LLMs in life sciences focus on a single
-    modality, such as protein sequences, genomic sequences, or single-cell transcriptomics.
-    However, biological systems are inherently multi-modal, with complex interactions spanning different molecular
-    and structural levels. For example, understanding protein function requires integrating sequence information
-    with structural properties and interaction networks. Similarly, deciphering metabolic pathways involves linking
-    small molecule representations with reaction kinetics and pathway annotations. Single-modal models often fail
-    to capture these intricate relationships, limiting their applicability in real-world biological research.
-  </p>
-  <p>
-    To address these limitations, there is a growing need for multi-modal foundation models and LLMs that can
-effectively integrate and reason over diverse biological modalities. These models need to align heterogeneous
-data types, handle missing or noisy modalities, and support biologically meaningful interpretations. Developing
-such models poses unique challenges, including modality fusion strategies, cross-modal pretraining objectives,
-and computational scalability. Additionally, ensuring interpretability and robustness remains essential for their
-adoption in life sciences.
-</p>
-
-    <p>
-      This workshop will bring together researchers working at the intersection of multi-modal learning, founda-
-tion models, LLMs, and life sciences to discuss recent advancements, explore methodological innovations, and
-identify key challenges in designing multi-modal foundation models and LLMs for biological data. By foster-
-ing interdisciplinary collaboration, the workshop aims to accelerate progress toward more comprehensive and
-biologically grounded AI models for life sciences.</p>
-    <p>
-      We invite submissions of both theoretical works and empirical works, and the intersection of the two. 
-      The topics include but are not limited to: 
-    </p>
-    <ul>
-    <li>
-    Theoretical foundations of SSL
-    </li>
-    <li>
-      Multi-modal foundation models for learning representations of proteins, DNAs, RNAs, transcriptomic
-data, metabolomic data, and other biological modalities.
-    </li>
-    <li>
-      Multi-modal LLMs for predicting the functions of proteins, DNAs, RNAs, and other biomolecules.
-    </li>
-    <li>
-      Multi-modal foundation models for learning joint representations of multi-omics data.
-    </li>
-    <li>
-      Multi-modal generative models for designing proteins, DNAs, RNAs, and other biomolecules.
-    </li>
-    <li>
-      Applications of multi-modal foundation models and LLMs in drug discovery, precision medicine, personalized treatment, and beyond.
-    </li>
-    <li>
-      Interpretability and robustness in biological multi-modal foundation models and LLMs.
-    </li>
-    </ul>
-<!-- </div> -->
-    <p>This year, this workshop will have a few invited talks by leading researchers from diverse backgrounds including multi-modal foundation models, LLMs, etc. 
-      The workshop will also have contributed talks, poster sessions, and panel discussion session to share perspectives on 
-      establishing foundational understanding of Multi-modal Foundation Models and Large
-      Language Models for Life Sciences. 
-      We accept short (max 4 pages) submissions. Each will be peer-reviewed by at least three reviewers. 
-      The accepted papers are allowed to be submitted to other conference venues. 
-      Please see our <a href="./pages/call-for-participation.html">call for papers </a> for details.
-    </p>
-
-
-</div>
+      <div class="row">
+        <div class="highlight-box">
+          <p>In-person workshop at <a href="https://nips.cc/Conferences/2024/Dates">ICML 2025</a></p>
+          <p><b>Date:</b> Saturday, July 18, 2025</p>
+          <p><b>Time:</b> 8:30 AM -- 5:40 PM</p>
+          <p><b>Location:</b> Vancouver Convention Center, Canada</p>
+          <p><b>Paper Submission:</b> <a href="https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/SSL">OpenReview</a></p>
+          <p><b>Contact Email:</b> fm4ls2025@gmail.com</p>
+        </div>
+      
+        <div class="highlight-box">
+          <p>Foundation models and large language models (LLMs) represent a transformative advancement in life sciences,
+            offering a new paradigm for understanding complex biological systems. These large-scale models are pretrained on extensive datasets encompassing various biological data types, enabling them to perform a wide range of tasks such as predicting protein structures, analyzing genomic sequences, and simulating cellular processes.</p>
+          <p>Despite these advances, most existing foundation models and LLMs in life sciences focus on a single modality, such as protein sequences, genomic sequences, or single-cell transcriptomics. However, biological systems are inherently multi-modal, with complex interactions spanning different molecular and structural levels.</p>
+        </div>
+      
+        <div class="highlight-box">
+          <p>To address these limitations, there is a growing need for multi-modal foundation models and LLMs that can effectively integrate and reason over diverse biological modalities. These models need to align heterogeneous data types, handle missing or noisy modalities, and support biologically meaningful interpretations.</p>
+        </div>
+      
+        <div class="highlight-box">
+          <p>This workshop will bring together researchers working at the intersection of multi-modal learning, foundation models, LLMs, and life sciences to discuss recent advancements, explore methodological innovations, and identify key challenges in designing multi-modal foundation models and LLMs for biological data.</p>
+          <p>We invite submissions of both theoretical works and empirical works, and the intersection of the two. The topics include but are not limited to:</p>
+          <ul>
+            <li>Theoretical foundations of SSL</li>
+            <li>Multi-modal foundation models for learning representations of proteins, DNAs, RNAs, transcriptomic data, metabolomic data, and other biological modalities.</li>
+            <li>Multi-modal LLMs for predicting the functions of proteins, DNAs, RNAs, and other biomolecules.</li>
+            <li>Multi-modal foundation models for learning joint representations of multi-omics data.</li>
+            <li>Multi-modal generative models for designing proteins, DNAs, RNAs, and other biomolecules.</li>
+            <li>Applications of multi-modal foundation models and LLMs in drug discovery, precision medicine, personalized treatment, and beyond.</li>
+            <li>Interpretability and robustness in biological multi-modal foundation models and LLMs.</li>
+          </ul>
+        </div>
+      
+        <div class="highlight-box">
+          <p>This year, this workshop will have a few invited talks by leading researchers from diverse backgrounds including multi-modal foundation models, LLMs, etc. The workshop will also have contributed talks, poster sessions, and panel discussion session to share perspectives on establishing foundational understanding of Multi-modal Foundation Models and Large Language Models for Life Sciences.</p>
+          <p>We accept short (max 4 pages) submissions. Each will be peer-reviewed by at least three reviewers. The accepted papers are allowed to be submitted to other conference venues. Please see our <a href="./pages/call-for-participation.html">call for papers </a> for details.</p>
+        </div>
+      </div>
+      
 
 
   </div>
