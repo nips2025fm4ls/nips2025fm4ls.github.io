@@ -18,8 +18,161 @@
   <link rel="stylesheet" href="../theme/css/style.css">
   <link rel="stylesheet" href="../theme/css/custom.css">
 
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #fff;
+        color: #222;
+        border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+        font-weight: 600;
+        margin: 0;
+        font-size: 24px;
+    }
+    header p {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #666;
+    }
+    .content p, .content ul {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
 
-<meta name="description" content="The workshop will be held December 16. 
+    .list-inline-item a:hover {
+        text-decoration: underline;
+    }
+    .highlight-box {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .highlight-box .time {
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 0.875rem; }
+
+    /* Paragraphs */
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    /* Links */
+    a {
+      text-decoration: none;
+      background-color: transparent;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    ul ul, ul ol, ol ul, ol ol {
+      margin-bottom: 0;
+    }
+
+    /* Code blocks */
+    pre, code {
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.875em;
+    }
+    pre {
+      margin-top: 0;
+      margin-bottom: 1em;
+      overflow: auto;
+    }
+    code {
+      padding: 0.2em 0.4em;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(27,31,35,0.05);
+      border-radius: 3px;
+    }
+    .table-wrapper {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-row {
+    display: table-row;
+    white-space: normal;
+    word-break: break-word;
+    border-bottom: 1px solid #ccc; /* Line between rows */
+}
+
+.table-row:last-child {
+    border-bottom: none; /* Remove the line after the last row */
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px; /* Optional for rounded corners */
+    white-space: normal;
+    word-break: break-word;
+}
+
+.table-header .table-cell {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .table-wrapper, .table-row, .table-cell {
+        display: block;
+    }
+
+    .table-cell {
+        padding: 10px 0;
+        border: none;
+    }
+
+    .table-cell:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+    }
+}
+
+</style>
+
+<meta name="description" content="
 Tenative schedule is below with possible changes.">
 </head>
 
@@ -33,7 +186,7 @@ Tenative schedule is below with possible changes.">
           </a>
         </div> -->
         <div class="col-xs-10">
-          <h1 class="title"><a href="../">NeurIPS 2024 Workshop: Self-Supervised Learning - Theory and Practice</a></h1>
+          <h1 class="title"><a href="../">ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences</a></h1>
           <!-- <p class="text-muted">Workshop at NeurIPS 2020</p> -->
           <br />
           <ul class="list-inline" style="font-weight:600"> 
@@ -54,27 +207,118 @@ Tenative schedule is below with possible changes.">
     <div class="container">
 <article class="article">
   <div class="content">
+    <div class="highlight-box">
+      <h3>Info</h3>
     <p>
     The workshop schedule is as follows (all times in the PST timezone, i.e., local time in Vancouver).
    </p>
     <p>
-      <b>Date:</b> December 14, 2024
+      <b>Date:</b> TBD
     </p>
     <p>
-      <b>Room:</b> West Meeting Room 202-204
+      <b>Room:</b> TBD
     </p>
     <p>
-       <b>NeurIPS link</b>: https://neurips.cc/virtual/2024/workshop/84703 (requires a NeurIPS registration for live stream)
+       <b>ICML link</b>: TBD
     </p>
     <p>All papers will be presented in poster sessions.</p>
-    <p>Note: slides of invited talks will be made available here soon.</p>
-    <br>
-    <hr>
-    <table cellpadding="8px">
+    
+
+  </div>
+  <div class="highlight-box">
+    <h3>Schedule</h3>
+    <div class="table-wrapper">
+      <div class="table-row table-header">
+          <div class="table-cell">Time</div>
+          <div class="table-cell">Activity</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">8:30 - 8:40 am</div>
+          <div class="table-cell">Opening Remarks</div>
+      </div>
+
+      <div class="table-row">
+          <div class="table-cell">8:40 - 9:05 am</div>
+          <div class="table-cell">Invited Talk 1</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">9:05 - 9:30 am</div>
+          <div class="table-cell">Invited Talk 2</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">9:30 - 9:55 am</div>
+          <div class="table-cell">Invited Talk 3</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">9:55 - 10:20 am</div>
+          <div class="table-cell">Invited Talk 4</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">10:20 - 11:50 am</div>
+          <div class="table-cell">Poster Session I</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">11:50 am - 12:00 pm</div>
+          <div class="table-cell">Contributed Talk 1</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">12:00 - 12:10 pm</div>
+          <div class="table-cell">Contributed Talk 2</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">12:10 - 12:20 pm</div>
+          <div class="table-cell">Contributed Talk 3</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">12:20 - 1:20 pm</div>
+          <div class="table-cell">Lunch Break</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">1:20 - 1:45 pm</div>
+          <div class="table-cell">Invited Talk 5</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">1:45 - 2:10 pm</div>
+          <div class="table-cell">Invited Talk 6</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">2:10 - 2:35 pm</div>
+          <div class="table-cell">Invited Talk 7</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">2:35 - 4:05 pm</div>
+          <div class="table-cell">Poster Session II</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">4:05 - 4:15 pm</div>
+          <div class="table-cell">Contributed Talk 4</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">4:15 - 4:25 pm</div>
+          <div class="table-cell">Contributed Talk 5</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">4:25 - 4:35 pm</div>
+          <div class="table-cell">Contributed Talk 6</div>
+      </div>
+      <div class="table-row">
+          <div class="table-cell">4:35 - 5:40 pm</div>
+          <div class="table-cell">Panel Discussion & Closing</div>
+      </div>
+  </div>
+  
+</div>
+    <!-- Add more rows as needed -->
+</div>
+
+    
+    <!--table cellpadding="8px">
+      <div class="highlight-box">
       <tr>
         <td>09:00-09:15</td>
         <td>Opening Remarks</td>
       </tr>
+    </div>
       <tr>
         <td>09:15-09:45</td>
         <td>Invited Talk: Sherry Yang (Google DeepMind)<br><i> Self-Supervised World Modeling from Internet Data</i>
@@ -150,13 +394,14 @@ Tenative schedule is below with possible changes.">
           </ul>
         </td>
       </tr>
-    </table>
+    </table-->
     <hr>
 
-  </div>
+  
   <br>
   <br>
   <br>
+</div>
 </article>
 </body>
 
